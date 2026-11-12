@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout | Medical Investments R.M.</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A5F27">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-base="../" data-page="checkout">
+
+<main>
+  <div class="page-head"><div class="container">
+    <span class="eyebrow">Compra segura</span>
+    <h1 style="font-size:clamp(2rem,5vw,3.6rem);margin-top:.8rem">Finalizar compra</h1>
+  </div></div>
+
+  <div class="container cart-layout">
+    <div>
+      <div id="coDone" class="form-card center" hidden>
+        <h3>¡Pedido enviado!</h3>
+        <p class="lead" style="margin:.8rem auto 1.5rem">Te contactaremos por WhatsApp para confirmar pago y envío.</p>
+        <a class="btn btn-primary" href="../tienda/index.html">Seguir comprando</a>
+      </div>
+
+      <form id="coForm" autocomplete="on">
+        <div class="form-card">
+          <h3>1. Datos de contacto</h3>
+          <div class="form-grid">
+            <div class="field full"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" required autocomplete="name"></div>
+            <div class="field"><label for="doc">Documento / NIT</label><input id="doc" name="doc" required></div>
+            <div class="field"><label for="tel">Teléfono</label><input id="tel" name="tel" type="tel" required autocomplete="tel"></div>
+            <div class="field full"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+        </div>
+        <div class="form-card">
+          <h3>2. Envío</h3>
+          <div class="form-grid">
+            <div class="field"><label for="ciudad">Ciudad</label><input id="ciudad" name="ciudad" required autocomplete="address-level2"></div>
+            <div class="field"><label for="dir">Dirección</label><input id="dir" name="dir" required autocomplete="street-address"></div>
+            <div class="field full"><label for="notas">Notas (opcional)</label><textarea id="notas" name="notas" rows="3"></textarea></div>
+          </div>
+        </div>
+        <div class="form-card">
+          <h3>3. Método de pago</h3>
+          <div class="pay-opts">
+            <label class="pay"><input type="radio" name="pago" value="Transferencia bancaria" checked> Transferencia bancaria</label>
+            <label class="pay"><input type="radio" name="pago" value="Pago contra entrega"> Pago contra entrega</label>
+            <label class="pay"><input type="radio" name="pago" value="Link de pago / tarjeta"> Link de pago (tarjeta)</label>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%;font-size:1.05rem">Confirmar pedido por WhatsApp →</button>
+        <p class="secure"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Tus datos solo se usan para gestionar tu pedido.</p>
+      </form>
+    </div>
+
+    <aside class="summary"><h3>Tu pedido</h3><div id="coSummary"></div></aside>
+  </div>
+</main>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Coloca aqui los archivos de la fuente Mont (licencia propia):
+Mont-Regular.woff2 (400), Mont-SemiBold.woff2 (600), Mont-Bold.woff2 (700)

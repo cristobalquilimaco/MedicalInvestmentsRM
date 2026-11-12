@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /carrito/
+Disallow: /checkout/
+Sitemap: https://www.medicalinvestmentsrm.com/sitemap.xml
