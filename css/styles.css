@@ -480,3 +480,7 @@ h1,h2,h3,p{overflow-wrap:anywhere}
   .modal-info{padding:0}
   .modal-info h2{font-size:1.3rem}
 }
+
+/* ===== v14: subir WhatsApp sobre la insignia de Netlify ===== */
+.wa{bottom:76px}
+@media(max-width:760px){.wa{bottom:76px;right:14px}}
